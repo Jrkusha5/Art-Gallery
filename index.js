@@ -35,8 +35,8 @@ app.use(express.json());
  app.use(cors(corsOptions));
 
 //middleware
- app.use('/artworks', artworkRoutes);
-app.use('/blogposts', blogPostRoutes);
+ app.use('/api/v1/artworks', artworkRoutes);
+app.use('/api/v1/blogposts', blogPostRoutes);
 
 
  app.listen(port,()=>{
